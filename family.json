@@ -1,0 +1,18 @@
+{
+  "name": "algorithm-notebook",
+  "kind": "notebook",
+  "topic": "算法 / 数据结构",
+  "stack": "C++17 + Python（系统编译器）",
+  "runtime": "系统 g++/python（现成）",
+  "items": "15 题",
+  "ci": "GitHub Actions",
+  "ci_status": "success",
+  "shared_reusable": [
+    "check.py：样例 + 随机对拍 + 计时",
+    "problems/*/tests/checker.py：语义 checker 样例"
+  ],
+  "skills": ["study-repo"],
+  "docs": "workbench/docs/算法题解工程化.md",
+  "status": "published",
+  "homepage": "https://github.com/jioshiyu/algorithm-notebook"
+}
