@@ -16,15 +16,15 @@
 |---|---|---|
 | 最长递增子序列 | `tail[k]`=长度 k+1 的最小结尾；二分替换 | [lis](../problems/02-dynamic-programming/lis/) |
 | 集合划分（Bell 数） | `S(n,k)=S(n-1,k-1)+k·S(n-1,k)` | [set-partition](../problems/02-dynamic-programming/set-partition/) |
-| 数字三角形 | `dp[i][j]=a+max(下方两格)` | 待建 |
+| 数字三角形 | `dp[i][j]=a+max(下方两格)` | [number-triangle](../problems/02-dynamic-programming/number-triangle/) |
 | 硬币问题（多重背包） | 二进制拆包 / 单调队列优化 | 待建 |
 
 ## 03 贪心
 
 | 题目 | 贪心选择 | 目录 |
 |---|---|---|
-| 会场安排 | 按开始时间排序，堆维护最早结束 | 待建 |
-| 多处最优服务次序 | 最短作业优先 + 最早空闲服务台 | 待建 |
+| 会场安排 | 按开始时间排序，堆维护最早结束 | [hall-scheduling](../problems/03-greedy/hall-scheduling/) |
+| 多处最优服务次序 | 最短作业优先 + 最早空闲服务台 | [service-order](../problems/03-greedy/service-order/) |
 | 删数问题 | 高位区间贪心 / 单调栈 | 待建 |
 
 ## 04 回溯
