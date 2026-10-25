@@ -11,8 +11,17 @@
     "check.py：样例 + 随机对拍 + 计时",
     "problems/*/tests/checker.py：语义 checker 样例"
   ],
-  "skills": ["study-repo"],
+  "skills": [
+    "study-repo"
+  ],
   "docs": "workbench/docs/算法题解工程化.md",
   "status": "published",
-  "homepage": "https://github.com/jioshiyu/algorithm-notebook"
+  "homepage": "https://github.com/jioshiyu/algorithm-notebook",
+  "topics": [
+    "notebook-family",
+    "algorithms",
+    "cpp",
+    "python",
+    "education"
+  ]
 }
