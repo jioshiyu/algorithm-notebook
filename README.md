@@ -13,6 +13,7 @@
 | 分类地图（按算法思想找题） | [docs/categories.md](docs/categories.md) |
 | 使用指南（目录约定/运行方式/扩题流程） | [docs/guide.md](docs/guide.md) |
 | 方法论（从作业到题解的五步法） | [docs/methodology.md](docs/methodology.md) |
+| 经验萃取（分批踩坑与规则） | [docs/lessons.md](docs/lessons.md) |
 | 进度与消耗台账 | [docs/progress.md](docs/progress.md) |
 | 路线图（后续扩建方向） | [docs/roadmap.md](docs/roadmap.md) |
 
