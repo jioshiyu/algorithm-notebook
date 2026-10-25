@@ -39,7 +39,7 @@
 | 题目 | 下界/优先队列 | 目录 |
 |---|---|---|
 | 最小重量机器设计 | 剩余部件最小重量和作为下界 | [min-weight-machines](../problems/05-branch-and-bound/min-weight-machines/) |
-| 顶点覆盖 | 剩余未覆盖边的最小端点权作为下界 | 待建 |
+| 顶点覆盖 | 剩余未覆盖边的最小端点权作为下界 | [vertex-cover](../problems/05-branch-and-bound/vertex-cover/) |
 
 ## 06 折半搜索 / 综合
 
