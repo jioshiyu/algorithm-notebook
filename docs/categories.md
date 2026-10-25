@@ -17,7 +17,7 @@
 | 最长递增子序列 | `tail[k]`=长度 k+1 的最小结尾；二分替换 | [lis](../problems/02-dynamic-programming/lis/) |
 | 集合划分（Bell 数） | `S(n,k)=S(n-1,k-1)+k·S(n-1,k)` | [set-partition](../problems/02-dynamic-programming/set-partition/) |
 | 数字三角形 | `dp[i][j]=a+max(下方两格)` | [number-triangle](../problems/02-dynamic-programming/number-triangle/) |
-| 硬币问题（多重背包） | 二进制拆包 / 单调队列优化 | 待建 |
+| 硬币问题（多重背包） | 单调队列优化 / 二进制拆包 | [coin-change](../problems/02-dynamic-programming/coin-change/) |
 
 ## 03 贪心
 
@@ -32,7 +32,7 @@
 | 题目 | 剪枝 | 目录 |
 |---|---|---|
 | 运动员最佳配对 | 乐观上界估计剪枝；或状压 DP | [athlete-pairing](../problems/04-backtracking/athlete-pairing/) |
-| 工作分配 | 费用 + 限界剪枝；或状压 DP | 待建 |
+| 工作分配 | 费用 + 限界剪枝；或状压 DP | [assignment](../problems/04-backtracking/assignment/) |
 
 ## 05 分支限界
 
@@ -45,7 +45,7 @@
 
 | 题目 | 思路 | 目录 |
 |---|---|---|
-| 旅行规划问题 | 折半枚举 + 排序二分；DP / 回溯 / 分支限界对照 | 待建 |
+| 旅行规划问题 | 折半枚举 + 排序二分；DP / 回溯 / 分支限界对照 | [travel-planning](../problems/06-hybrid/travel-planning/) |
 
 ## 交叉索引（按原题号）
 

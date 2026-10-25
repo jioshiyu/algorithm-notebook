@@ -1,0 +1,47 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.12"]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: 安装 C++ 编译器
+        run: |
+          g++ --version
+
+      - name: 全题质检（编译 + 样例 + 随机对拍）
+        run: |
+          python shared/check.py --all --stress 40
+
+      - name: 检查仓库结构（每题必需文件）
+        run: |
+          python - <<'EOF'
+          from pathlib import Path
+          problems = [p for p in Path("problems").glob("*/*") if p.is_dir()]
+          assert problems, "没有题目目录"
+          missing = []
+          for p in problems:
+              for need in ("README.md", "cpp/solution.cpp", "python/solution.py",
+                           "tests/brute.py", "tests/gen.py"):
+                  if not (p / need).exists():
+                      missing.append(f"{p}/{need}")
+          print(f"题目数: {len(problems)}")
+          if missing:
+              print("\n".join(missing))
+              raise SystemExit(1)
+          EOF
