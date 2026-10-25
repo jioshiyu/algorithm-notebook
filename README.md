@@ -17,6 +17,7 @@
 | 方法论（从作业到题解的五步法） | [docs/methodology.md](docs/methodology.md) |
 | 经验萃取（分批踩坑与规则） | [docs/lessons.md](docs/lessons.md) |
 | 进度与消耗台账 | [docs/progress.md](docs/progress.md) |
+| GitHub 发布清单 | [docs/github-setup.md](docs/github-setup.md) |
 | 路线图（后续扩建方向） | [docs/roadmap.md](docs/roadmap.md) |
 
 ## 快速开始
@@ -57,6 +58,26 @@ python shared/check.py problems/01-divide-and-conquer/count-pages --stress 500
 | 选做 3-0 | 硬币问题 | 动态规划 | 二进制拆包 / 单调队列 | ✅ |
 | 选 6-4 | 最小重量机器设计（分支限界版） | 分支限界 | 见 5-3 合并条目 | ✅ |
 | 大作业 | 旅行规划问题 | 折半搜索 · DP · 回溯 | 枚举 / 折半 / DP / 回溯 / 分支限界 | ✅ |
+
+## 复杂度速查（主解）
+
+| 题目 | 时间 | 空间 | 一句话 |
+|---|---|---|---|
+| 统计数字 | `O(log n)` | `O(1)` | 逐位 high/cur/low，0 特判 |
+| 格雷码 | `O(n·2^n)` | `O(1)` | `i ^ (i>>1)` |
+| 众数 | `O(n log n)` | `O(n)` | 排序找最长连续段 |
+| 集合划分 | `O(n²)` | `O(n)` | Stirling 滚动求和 |
+| 最长递增子序列 | `O(n log n)` | `O(n)` | tail 数组 + 二分 + 前驱 |
+| 数字三角形 | `O(n²)` | `O(n²)` | 自底向上 DP |
+| 硬币问题 | `O(n·m)` | `O(n·m)` | 单调队列多重背包 |
+| 会场安排 | `O(n log n)` | `O(n)` | 贪心 + 最小堆 |
+| 服务次序 | `O(n log n)` | `O(n)` | 最短作业优先 + 最早空闲台 |
+| 删数问题 | `O(n)` | `O(n)` | 单调栈消逆序 |
+| 运动员配对 | `O(n·2^n)` | `O(2^n)` | 状压 DP（排列匹配） |
+| 工作分配 | `O(n·2^n)` | `O(2^n)` | 状压 DP（指派） |
+| 最小重量机器 | 最坏 `O(m^n)`，剪枝后远小 | `O(n·节点)` | 分支限界（下界=剩余最小重量） |
+| 顶点覆盖 | 最坏 `O(2^n·m)` | `O(n·节点)` | 分支限界（下界=极大匹配） |
+| 旅行规划 | `O(2^(n/2)·n)` | `O(2^(n/2))` | 折半搜索 |
 
 ## 仓库约定（摘要）
 

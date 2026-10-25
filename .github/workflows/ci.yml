@@ -40,6 +40,8 @@ jobs:
                            "tests/brute.py", "tests/gen.py"):
                   if not (p / need).exists():
                       missing.append(f"{p}/{need}")
+              if not list((p / "tests" / "samples").glob("*.in")):
+                  missing.append(f"{p}/tests/samples/*.in")
           print(f"题目数: {len(problems)}")
           if missing:
               print("\n".join(missing))

@@ -32,9 +32,12 @@ algorithm-notebook/
 - **输入输出只用 stdin/stdout**：不读文件、不写死路径，便于对拍与跨平台；
 - C++：`g++ -O2 -std=c++17`，`solution.cpp` 自带 `main`；
 - Python：≥ 3.10，`solution.py` 自带 `main`，只用标准库；
-- 样例格式：`tests/samples/<name>.in` 与同名 `.out`；
+- 样例格式：`tests/samples/<name>.in` 与同名 `.out`，每题至少一个样例；
 - 测试生成器 `gen.py`：`python gen.py [seed]` 打印一个用例；
-- 暴力解 `brute.py`：读取 stdin，打印期望输出（允许慢，但要绝对正确）。
+- 暴力解 `brute.py`：读取 stdin，打印期望输出（允许慢，但要绝对正确）；
+- **多解/方案题的 `tests/checker.py`**：接口为
+  `python checker.py <input> <expected> <got>`，退出码 0 表示通过，否则打印原因。
+  适用于「答案不唯一」的题（LIS 任一条、三角形路径、分配方案、覆盖方案、集合组合）。
 
 ## 3. 一题全检
 
