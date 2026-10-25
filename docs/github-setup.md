@@ -1,5 +1,10 @@
 # GitHub 发布清单（用户侧操作）
 
+> **状态：已发布** → <https://github.com/jioshiyu/algorithm-notebook>
+> 2026-10-25：仓库创建完成，`main` 分支已推送（`fc43b78`），CI 首跑通过。
+
+> 以下为原始操作记录，保留作为再次发布/迁移时的参考。
+
 > 仓库已本地完成：`D:\Projects\algorithm-notebook`，分支 `main`，所有改动已提交（最新 `a487d58` 之后的收尾提交）。
 > 由于本机没有 `gh` CLI 与 GitHub token，**建仓库这一步需要你在网页完成**，之后推送由执行代理（我）完成。
 

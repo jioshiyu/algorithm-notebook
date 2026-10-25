@@ -1,5 +1,7 @@
 # 算法专题笔记 · Algorithm Notebook
 
+[![ci](https://github.com/jioshiyu/algorithm-notebook/actions/workflows/ci.yml/badge.svg)](https://github.com/jioshiyu/algorithm-notebook/actions/workflows/ci.yml)
+
 > 从课程作业到可复用题解：**分治 / 动态规划 / 贪心 / 回溯 / 分支限界 / 折半搜索**，C++17 与 Python 双实现，随机对拍验证。
 >
 > 这里按**算法思想**组织，而不是按题号堆叠：每道题有统一的题解结构（思路演进 → 正确性 → 复杂度 → 多解对比 → 易错点 → 复习要点），配套暴力参考解与随机测试，方便查阅、复习和面试对照。
