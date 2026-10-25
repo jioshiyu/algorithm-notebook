@@ -25,7 +25,7 @@
 |---|---|---|
 | 会场安排 | 按开始时间排序，堆维护最早结束 | [hall-scheduling](../problems/03-greedy/hall-scheduling/) |
 | 多处最优服务次序 | 最短作业优先 + 最早空闲服务台 | [service-order](../problems/03-greedy/service-order/) |
-| 删数问题 | 高位区间贪心 / 单调栈 | 待建 |
+| 删数问题 | 高位区间贪心 / 单调栈 | [remove-k-digits](../problems/03-greedy/remove-k-digits/) |
 
 ## 04 回溯
 
