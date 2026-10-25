@@ -1,0 +1,21 @@
+# 构建产物
+build/
+*.exe
+*.o
+*.obj
+
+# Python
+__pycache__/
+*.pyc
+
+# 测试临时目录
+tests/tmp/
+tests/*/tmp/
+
+# 编辑器
+.vscode/
+.idea/
+.DS_Store
+
+# 本地快照
+.usage-snapshots/
